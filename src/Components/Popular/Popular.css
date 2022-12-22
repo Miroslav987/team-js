@@ -1,0 +1,123 @@
+.popular {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+/* ! Start block-left */
+
+.popular_block {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.207);
+  border-radius: 10px;
+  width: 23vw;
+  height: 70vh;
+}
+
+.popular_block h2 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.popular_search {
+  background: url("../img/search.svg") no-repeat 10px;
+  background-size: auto 50%;
+  background-color: white;
+  padding-left: 100px;
+  border: none;
+  border-radius: 5px;
+  width: 14.5vw;
+  height: 40px;
+}
+
+.popular_block select {
+  background: none;
+  border: navajowhite;
+  color: #000000;
+  font-size: 20px;
+  width: 20vw;
+}
+
+.inp_check {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  font-size: 20px;
+}
+
+.popular_btn {
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn_search {
+  width: 5vw;
+  height: 5vh;
+
+  background: #455966;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 17px;
+}
+.btn_reset {
+  font-size: 17px;
+}
+/* ? End block-left */
+
+.popular_right {
+  width: 68vw;
+}
+
+.popular_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular_right h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 0px 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 320px;
+  background-color: rgb(185, 179, 172);
+}
+
+.card_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_info p {
+  margin: 10px;
+}
+
+.card img {
+  width: 10vw;
+}
+
+.card button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+
+  background: #455966;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
