@@ -3,15 +3,16 @@ import user from "../img/user.svg";
 import iconFon from "../img/icon_fon.svg";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-
+import newFon from "../img/update_fon.svg";
 const Navbar = ({ update, setUpdate }) => {
   const style = {
     background: "black",
     color: "white",
   };
-
+  let color = update.color;
+  // console.log(color);
   const style1 = {
-    // background: "black",
+    background: "white",
     color: "black",
   };
   return (
@@ -40,18 +41,35 @@ const Navbar = ({ update, setUpdate }) => {
           </div>
           <div className="nav_right">
             <input
+              style={{ color: color }}
               className="search"
               type="text"
               placeholder="Start to add a symbols"
             />
 
             <Link to="/registration">
-              <img src={user} alt="userIcon" />
+              <img className={color} src={user} alt="userIcon" />
             </Link>
             <button
               style={{ border: "none", background: "none" }}
               onClick={() => setUpdate(style)}>
               <img src={iconFon} alt="iconUpdate" />
+            </button>
+            <button
+              style={{
+                height: "50px",
+                filter: "invert(1)",
+                border: "none",
+                background: "none",
+              }}
+              onClick={() => setUpdate(style1)}>
+              <img
+                style={{
+                  height: "40px",
+                }}
+                src={newFon}
+                alt="iconUpdate"
+              />
             </button>
           </div>
         </div>

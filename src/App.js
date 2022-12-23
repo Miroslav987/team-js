@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import AuthContextProvider from "./context/AuthContextProvider";
 import MainRoutes from "./MainRoutes";
 
 const App = () => {
-  const [update, setUpdate] = useState();
-  const style = {
-    background: "white",
-    color: "white",
-  };
-  console.log(update);
+  const [update, setUpdate] = useState({});
+
+  // let bc = update.background;
   return (
     // <body style={update}>
     <>
       <div className="body" style={update}>
-        <Navbar update={update} setUpdate={setUpdate} />
-        <MainRoutes update={update} setUpdate={setUpdate} />
-        <Footer />
+        <AuthContextProvider>
+          <Navbar update={update} setUpdate={setUpdate} />
+          <MainRoutes setUpdate={setUpdate} />
+          <Footer />
+        </AuthContextProvider>
       </div>
     </>
     // </body>

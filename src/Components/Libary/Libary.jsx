@@ -86,26 +86,6 @@ const Libary = () => {
               <button>Read now</button>
             </div>
           </div>
-          <div className="card">
-            <div className="card_info">
-              <img
-                src="https://binaries.templates.cdn.office.net/support/templates/ru-ru/lt22301254_quantized.png"
-                alt=""
-              />
-              <p>Название</p>
-              <button>Read now</button>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card_info">
-              <img
-                src="https://binaries.templates.cdn.office.net/support/templates/ru-ru/lt22301254_quantized.png"
-                alt=""
-              />
-              <p>Название</p>
-              <button>Read now</button>
-            </div>
-          </div>
         </div>
       </div>
     </>

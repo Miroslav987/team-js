@@ -7,7 +7,7 @@
 }
 
 a {
-  color: black;
+  color: inherit;
   list-style-type: none;
   text-decoration: none;
 }
